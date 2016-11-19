@@ -1,0 +1,164 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC School Lunches</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="author" content="" />
+    <meta name="geo.country" content="US" />
+    <meta name="dc.language" content="en" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <meta property="og:site_name"       content="TITLE OF YOUR SITE"/>
+    <!-- You will need to get an ID from Facebook https://developers.facebook.com/docs/apps/register -->
+    <meta property="fb:app_id"          content="INSERT FACEBOOK ID HERE" /> 
+    <meta property="og:type"            content="website" /> 
+    <meta property="og:url"             content="LINK TO YOUR PROJECT" /> 
+    <meta property="og:title"           content="OUR GRAPHIC'S TITLE" /> 
+    <meta property="og:image"           content="LINK TO YOUR SOCIAL IMAGE 1200x800" /> 
+    <meta property="og:description"     content="YOUR DEK" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="800" />
+    <meta property="article:publisher" content="LINK TO YOUR PROJECT" />
+
+    <!--  This information will show up when your site gets shared on Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cunyjschool">
+    <meta name="twitter:title" content="YOUR GRAPHIC'S TITLE">
+    <meta name="twitter:description" content="YOUR DEK">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image:src" content="LINK TO YOUR SOCIAL IMAGE">
+    <meta name="twitter:domain" content="LINK TO YOUR PROJECT">
+    <meta name="twitter:app:name:iphone" content="">
+    <meta name="twitter:app:name:ipad" content="">
+    <meta name="twitter:app:name:googleplay" content="">
+    <meta name="twitter:app:url:iphone" content="">
+    <meta name="twitter:app:url:ipad" content="">
+    <meta name="twitter:app:url:googleplay" content="">
+    <meta name="twitter:app:id:iphone" content="">
+    <meta name="twitter:app:id:ipad" content="">
+    <meta name="twitter:app:id:googleplay" content="">
+
+    <!-- Google fonts 
+    https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro:300,400,400i,700,700i
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700,700i" rel="stylesheet">
+
+    <!-- Library for icons: http://fontawesome.io/icons/-->
+    <link rel="stylesheet" href="css/libs/font-awesome.css" >
+
+    
+
+    
+    <!-- Foundation styles -->
+    <link rel="stylesheet" href="css/foundation.css">
+
+    <!-- styles for semantic ui -->
+    
+    <link rel="stylesheet" href="css/libs/semantic.min.css"/>
+    <link rel="stylesheet" href="css/libs/dropdown.min.css"/>
+
+     <!-- Your styles, which can override foundation -->
+    <link rel="stylesheet" href="css/app.css">
+
+    
+   
+
+  </head>
+  <body>
+    
+    <div class="row">
+      <div class="large-12 columns">
+        <h1 id="title">How Do NYC Schools in Your Area Stack Up?
+        </h1>
+        <img src="images/lunch.svg" style="width:304px;height:228px;">
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="large-8 medium-8 small-12 columns" id="graph1">
+        <p>Data on free lunches, or reduced lunches, in public schools is a commonly used proxy by researchers for estimating what percent of the school is living in poverty. It is not a perfect method, as the threshold for free lunches - at least in New York City - can be as high as 130 percent of the poverty rate; or, about $40,000 per year for a family of four.</p>
+        <p>But since data on a school's poverty rate is a much harder number to come by, many researchers still rely on the free lunch data as being a fair indicator of low-income students.</p>
+        <p>Low-income students are also the ones who are often short-changed when it comes to funding from <a href="http://www.theatlantic.com/business/archive/2015/09/public-school-funding-and-the-role-of-race/408085/">school districts.</a> This often means that they have fewer teachers, which ultimately leads to class sizes of 30 to sometimes 40 students.</p>
+        <p>The students who stand to benefit most from smaller teacher-student ratios are students who are coming from a lower income bracket. For instance, in a study published in <a href="http://www.centerforpubliceducation.org/Main-Menu/Organizing-a-school/Class-size-and-student-achievement-At-a-glance/Class-size-and-student-achievement-Research-review.html">1980,</a> researchers found that students in classes of 18 or less students performed better. This number proved to be even more effective for minority and low-income students, even though they tend to be the ones in schools where the class sizes are sometimes double that of more affluent schools in their area.</p>
+        <p>Using the menu below, you can look at the schools in different parts of New York City to see how they're free lunch offerings and student to teacher ratios compare.</p>
+    </div>
+        <div class="large-8 medium-8 small-12">
+          <h3 id="neighborhood">Choose a school from your neighborhood:</h3>
+          <select id="select">
+
+          </select>
+          <div><a href="#" class="button" id="appbutton">Find my school...</a></div>
+        </div>
+
+    
+        <div><h2>Your school is...</h2>
+            <div id="result">
+            <!-- Your content goes in here. -->
+            </div>
+        </div>
+        <div>
+            <p id="result2"></p>
+            <!-- Your content goes in here. -->
+        </div>
+         <div id="result3">
+            <!-- Your content goes in here. -->
+        </div>
+
+        <div id="result4">
+            <!-- Your content goes in here. -->
+        </div>
+        <div id="result5">
+            <!-- Your content goes in here. -->
+        </div>
+
+        <p>A link to the Department of Education Statistics can be found <a href="http://nces.ed.gov/ccd/schoolsearch/school_list.asp?Search=1&InstName=&SchoolID=&Address=&City=New+York&State=36&Zip=&Miles=&County=New+York+County&PhoneAreaCode=&Phone=&DistrictName=&DistrictID=&SchoolType=1&SchoolType=2&SchoolType=3&SchoolType=4&SpecificSchlTypes=all&IncGrade=-1&LoGrade=-1&HiGrade=-1">here.</a></p>
+
+
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+<!--     <div class="row">
+        <div class="large-8 medium-8 small-12 columns">
+        <p></p>
+        
+       <Your content goes in here.-->
+            <!-- <div class="large-4 medium-4 small-12 ">
+                <select data-placeholder="Choose a zip code..." class="ui fluid search dropdown" id="select-container">
+                    <option value="">Type your school name</option>
+                </select>
+            </div> 
+
+            <div><a href="#" class="button" id="appbutton">I'm a button (duh)</a></div>
+            
+            <div id="result" class="callout">
+                <p class="item" value=""></p><! Your content goes in here. -->
+         <!--    </div>
+
+        </div>
+    </div> --> 
+    <!-- load data -->
+    <script src="js/data/data.js"></script>
+
+    <!-- load libraries  -->
+    <script src="js/libs/jquery.js"></script>
+    <script src="js/libs/semantic.min.js"></script>
+    <script src="js/libs/dropdown.js"></script>
+    <script src="js/libs/underscore.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>
